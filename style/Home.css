@@ -121,7 +121,9 @@ nav > h1 {
 }
 
 /* Card Project Container : */
-
+.cardprojectcontainer > a {
+    text-decoration: none;
+}
 .cardprojectcontainer {
     display: flex;
     align-items: top;
