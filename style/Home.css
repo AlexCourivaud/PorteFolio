@@ -1,0 +1,156 @@
+:root {
+    --DarkBlue: #233048;
+    --Blue: #415A77;
+    --LightBlue: #7C95B6;
+    --Beige: #C6BDB6;
+    --White: #E0E1DD;
+    font-family: 'Inter', sans-serif;
+    color: var(--DarkBlue); 
+    background-color: var(--Beige);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    margin: 40px;
+  }
+nav {
+    background-color: var(--DarkBlue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+nav > h1 {
+    color: var(--White);
+    margin-left: 20px;
+}
+
+.navbuttoncontainer {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin-right: 10px;
+}
+.navbutton {
+    background-color: var(--White);
+    border: 1px solid var(--LightBlue);
+    border-radius: 10px;
+    padding-right: 13px;
+    padding-left: 13px;
+}
+.navbutton > a {
+    text-decoration: none;
+    color: var(--DarkBlue);
+    font-size: 20px;
+}
+.navbutton > a > img {
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+/* Card About Me  */
+
+.cardaboutme {
+    display: flex;
+    flex:min-content;
+    justify-content: space-around;
+    border-radius: 6px;
+    margin: 30px;
+}
+
+.cardtext {
+    background-color: var(--White);
+    border-radius: 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    border: 1px solid var(--DarkBlue);
+}
+
+.cardtext > h1 {
+    color: var(--DarkBlue);
+}
+
+.cardtext > h2 {
+    color: var(--Blue);
+}
+
+.cardtext > p {
+    color: var(--LightBlue);
+    margin-top: 50px;
+}
+
+.cardlinkpicture {
+    margin: 45px;
+}
+.cardlinkpicture > img {
+    border-radius: 100%;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.cardlink {
+    background-color: var(--DarkBlue);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.cardlink > h3 {
+    color: var(--White);
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.cardlinklogo {
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+}
+
+/* Card Project Container : */
+
+.cardprojectcontainer {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cardproject {
+    background-color: var(--White);
+    display: flex;
+    flex:min-content;
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 1px solid var(--DarkBlue);
+    margin: 20px;
+}
+.cardproject > img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cardprojecttitle {
+    background-color: var(--DarkBlue);
+    color: var(--White);
+    margin-top: -4px;
+}
+
+.cardprojectdescription {
+    color: var(--Blue);
+    margin: 10px;
+}
