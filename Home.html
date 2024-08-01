@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/Home.css">
+        <link rel="stylesheet" href="style/index-mediaquery.css">
         
         <title>Portfolio's Home</title>
     </head>
@@ -12,6 +12,15 @@
             <nav>
                 <h1>A Courivaud's Portfolio</h1>
                 <div class="navbuttoncontainer">
+                    <label class="hbutton" for="htoggle">
+                        &#9776;
+                    </label>
+                    <input id="htoggle" type="checkbox">
+                    <div class="hitems">
+                        <a href="Home.html" target="_self"><img src="Icon/home.png" alt="HomeLogo" class="logo">Home</a>
+                        <a href="AboutMe.html" target="_self"><img src="Icon/information.png" alt="AboutMeLogo" class="logo">AboutMe</a>
+                        <a href="Projects.html" target="_self"><img src="Icon/sheet.png" alt="ProjectLogo" class="logo">Projects</a>
+                    </div>
                     <div class="navbutton"><a href="Home.html" target="_self"><img src="Icon/home.png" alt="HomeLogo">Home</a></div>
                     <div class="navbutton"><a href="AboutMe.html" target="_self"><img src="Icon/information.png" alt="AboutMeLogo">AboutMe</a></div>
                     <div class="navbutton"><a href="Projects.html" target="_self"><img src="Icon/sheet.png" alt="ProjectLogo">Projects</a></div>
@@ -31,9 +40,9 @@
                     <div class="cardlink">
                         <h3>Contact Me</h3>
                         <div class="cardlinklogo">
-                            <a href="https://fr.linkedin.com/in/alex-courivaud" target="_blank"><img src="Icon/linkedinblanc.png" alt="LinkedinLogo" width="40px" height="40px"></a>
-                            <a href="https://github.com/AlexCourivaud" target="_blank"><img src="Icon/githubblanc.png" alt="GitHubLogo" width="40px" height="40px"></a>
-                            <a href="mailto:xxxxxx@example.com" target="_blank"><img src="Icon/mailblanc.png" alt="GitHubLogo" width="40px" height="40px"></a>
+                            <a href="https://fr.linkedin.com/in/alex-courivaud" target="_blank"><img src="Icon/linkedinblanc.png" alt="LinkedinLogo" class="logo"></a>
+                            <a href="https://github.com/AlexCourivaud" target="_blank"><img src="Icon/githubblanc.png" alt="GitHubLogo" class="logo"></a>
+                            <a href="mailto:xxxxxx@example.com" target="_blank"><img src="Icon/mailblanc.png" alt="GitHubLogo" class="logo"></a>
                         </div>
                     </div>
                 </div>
