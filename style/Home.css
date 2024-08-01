@@ -14,18 +14,17 @@
     padding: 0;
   }
 
-  header {
-    margin: 40px;
-  }
+  a {
+    text-decoration: none;
+}
+/* Navbar */
 nav {
     background-color: var(--DarkBlue);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-
 }
-
 
 nav > h1 {
     color: var(--White);
@@ -58,7 +57,11 @@ nav > h1 {
     margin-left: 10px;
     margin-top: 5px;
 }
+/* main */
 
+main {
+    margin: 20px;
+}
 /* Card About Me  */
 
 .cardaboutme {
@@ -72,16 +75,18 @@ nav > h1 {
 .cardtext {
     background-color: var(--White);
     border-radius: 10px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-top: 100px;
+    /*! padding-bottom: 40vh; */
+    /*! padding-right: 20px; */
+    /*! justify-content: center; */
     text-align: center;
     border: 1px solid var(--DarkBlue);
+    width: 66%;
 }
 
 .cardtext > h1 {
     color: var(--DarkBlue);
+    margin-bottom: 20px;
 }
 
 .cardtext > h2 {
@@ -91,10 +96,13 @@ nav > h1 {
 .cardtext > p {
     color: var(--LightBlue);
     margin-top: 50px;
+    margin: 100px;
+    /*! height: 42vh; */
 }
 
 .cardlinkpicture {
     margin: 45px;
+    width: 33%;
 }
 .cardlinkpicture > img {
     border-radius: 100%;
@@ -121,8 +129,10 @@ nav > h1 {
 }
 
 /* Card Project Container : */
-.cardprojectcontainer > a {
-    text-decoration: none;
+.projectcontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .cardprojectcontainer {
     display: flex;
@@ -137,7 +147,6 @@ nav > h1 {
     flex:min-content;
     flex-direction: column;
     text-align: center;
-    max-width: 500px;
     border-radius: 10px;
     border: 1px solid var(--DarkBlue);
     margin: 20px;
@@ -146,6 +155,7 @@ nav > h1 {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
 .cardprojecttitle {
     background-color: var(--DarkBlue);
     color: var(--White);
@@ -155,4 +165,12 @@ nav > h1 {
 .cardprojectdescription {
     color: var(--Blue);
     margin: 10px;
+}
+
+/* Footer */
+
+footer {
+    font-style: italic ;
+    display: flex;
+    justify-content: end;
 }
