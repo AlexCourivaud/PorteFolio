@@ -1,3 +1,4 @@
+/* base content  */
 :root {
     --DarkBlue: #233048;
     --Blue: #415A77;
@@ -74,7 +75,6 @@ nav > h1 {
 .hbutton {
     display: none;
 }
-/* Create a horizontal menu */ 
 
 
 /* main */
@@ -96,9 +96,6 @@ main {
     background-color: var(--White);
     border-radius: 10px;
     padding-top: 100px;
-    /*! padding-bottom: 40vh; */
-    /*! padding-right: 20px; */
-    /*! justify-content: center; */
     text-align: center;
     border: 1px solid var(--DarkBlue);
     width: 66%;
@@ -201,9 +198,8 @@ footer {
 }
 
 
-
+/* media query */
 @media screen and ( max-width: 768px) {
-    /* text entre les container : */
 
     /* Navbar */
         .navbuttoncontainer {
@@ -212,7 +208,6 @@ footer {
             align-items: center;
             justify-content: end;
         }
-        /* transform text :vertical */
         .hitems {
             display: flex;
             flex-wrap: wrap;
@@ -357,4 +352,33 @@ footer {
     color: var(--Blue);
     margin: 10px;
 }
+}
+
+/* css project1.html  */
+
+
+
+
+.cardproject1 {
+    background-color: var(--White);
+    display: flex;
+    flex:min-content;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--DarkBlue);
+    margin: 60px;
+}
+
+.cardproject1 > img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.cardimgproject1 {
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: space-around;
 }
