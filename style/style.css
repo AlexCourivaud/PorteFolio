@@ -75,15 +75,12 @@ nav > h1 {
 .hbutton {
     display: none;
 }
-
-
 /* main */
 
 main {
     margin: 20px;
 }
 /* Card About Me  */
-
 .cardaboutme {
     display: flex;
     flex:min-content;
@@ -114,7 +111,6 @@ main {
     color: var(--LightBlue);
     margin-top: 50px;
     margin: 100px;
-    /*! height: 42vh; */
 }
 
 .cardlinkpicture {
@@ -189,7 +185,6 @@ main {
     height: 40px;
 }
 /* Footer */
-
 footer {
     font-style: italic ;
     display: flex;
@@ -200,165 +195,78 @@ footer {
 
 /* media query */
 @media screen and ( max-width: 768px) {
-
-    /* Navbar */
-        .navbuttoncontainer {
-            margin-right: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: end;
-        }
-        .hitems {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .hitems > * {
-            flex-grow: 1;
-            flex-basis: 0;
-            padding: 10px;
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            cursor: pointer;
-        }
-        .hitems > *:hover{
-            background: red;
-        }
-        .hitems > * {
-            width: 100%;
-            flex-basis: auto;
-            
-        }
-        .navbutton {
-            display: none;
-        }
-        .hbutton{
-            display: inline-block;
-            color: white;
-            font-size: 3.2em;
-            padding: 8px;
-            align-items: center;
-            justify-content: end;
-            /*! width: 19px; */
-            /*! font-size: xxx-large; */
-            }
-            /* show only when checkbox is :checked */
-            .hitems {display:none}
-            #htoggle:checked ~ .hitems { display: flex;}
-            
-    
-    /* Container Aboutme : */
-    
-    
-    
-    .cardaboutme {
+/* Navbar */
+    .navbuttoncontainer {
+        margin-right: 5px;
         display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .hitems {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hitems > * {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+    }
+    .hitems > *:hover{
+        background: red;
+    }
+    .hitems > * {
+        width: 100%;
+        flex-basis: auto;
+        
+    }
+    .navbutton {
+        display: none;
+    }
+    .hbutton{
+        display: inline-block;
+        color: white;
+        font-size: 3.2em;
+        padding: 8px;
+        align-items: center;
+        justify-content: end;
+        }
+        /* show only when checkbox is :checked */
+        .hitems {display:none}
+        #htoggle:checked ~ .hitems { display: flex;}
+    /* Container Aboutme : */
+    .cardaboutme {
         flex-direction: column;
         margin: 2px;
         align-items: center;
     }
     
     .cardtext {
-        background-color: var(--White);
-        border-radius: 10px;
-        padding-top: 100px;
-        text-align: center;
-        border: 1px solid var(--DarkBlue);
         width: 99%;
         margin: 10px;
-    }
-    
-    .cardtext > h1 {
-        color: var(--DarkBlue);
-        margin-bottom: 20px;
-    }
-    
-    .cardtext > h2 {
-        color: var(--Blue);
-    }
-    
-    .cardtext > p {
-        color: var(--LightBlue);
-        margin-top: 50px;
-        margin: 100px;
-        /*! height: 42vh; */
     }
     
     .cardlinkpicture {
         margin: 20px;
         width: 50%;
     }
-    .cardlinkpicture > img {
-        border-radius: 100%;
-        width: 100%;
-        max-width: 1000px;
-    }
-    
-    .cardlink {
-        background-color: var(--DarkBlue);
-        border-radius: 20px;
-        text-align: center;
-    }
-    
-    .cardlink > h3 {
-        color: var(--White);
-        margin-top: 10px;
-        padding-top: 10px;
-    }
-    
-    .cardlinklogo {
-        display: flex;
-        justify-content: space-around;
-        padding:10px;
-    }
     /* container projects : */
+        .projectcontainer {
+        align-items: center;
+    }
+    .cardprojectcontainer {
+        align-items: center;
+        width: 75%;
+    }
 
-    .projectcontainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
+    .cardproject {
+        margin: 10px;
+    }
 }
-.cardprojectcontainer {
-    display: flex;
-    align-items: center;
-    /*! justify-content: center; */
-    width: 75%;
-}
-
-.cardproject {
-    background-color: var(--White);
-    display: flex;
-    flex:min-content;
-    flex-direction: column;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid var(--DarkBlue);
-    margin: 10px;
-}
-.cardproject > img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.cardprojecttitle {
-    background-color: var(--DarkBlue);
-    color: var(--White);
-    margin-top: -4px;
-}
-
-.cardprojectdescription {
-    color: var(--Blue);
-    margin: 10px;
-}
-}
-
 /* css project1.html  */
-
-
-
-
 .cardproject1 {
     background-color: var(--White);
     display: flex;
