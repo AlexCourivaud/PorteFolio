@@ -15,9 +15,20 @@
     padding: 0;
   }
 
+  main {
+    margin: 20px;
+}
+
   a {
     text-decoration: none;
 }
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+/* //////base content  */
+
 /* Navbar */
 nav {
     background-color: var(--DarkBlue);
@@ -41,6 +52,14 @@ nav > h1 {
     width: 50%;
     margin-right: 10px;
 }
+
+    @media screen and ( max-width: 768px) {
+        .navbuttoncontainer {
+            justify-content: end;
+        }
+    }
+
+    /* navbutton  */
 .navbutton {
     background-color: var(--White);
     border: 1px solid var(--LightBlue);
@@ -65,21 +84,72 @@ nav > h1 {
     margin-left: 10px;
     margin-top: 5px;
 }
-/* Remove all the burger button */
-.hitems {
+    /* Remove navbutton on small screen */
+    @media screen and ( max-width: 768px) {
+        .navbutton {
+            display: none;
+        }
+    }
+  /* ///navbutton  */
+
+  /* burger button  */
+/* Do no display the burger button on large screen */
+  .burgerbutton {
     display: none;
 }
-#htoggle {
+
+  @media screen and ( max-width: 768px) {
+    .burgerbutton{
+        display: inline-block;
+        color: white;
+        font-size: 3.2em;
+        padding: 8px;
+        align-items: center;
+        justify-content: end;
+        }
+    }
+
+/* remove the toggle burger on big screen  */
+#burgertoggle {
     display:none;
 }
-.hbutton {
+
+.burgeritems {
     display: none;
 }
-/* main */
 
-main {
-    margin: 20px;
-}
+/* display on small screen the burger items */
+    @media screen and ( max-width: 768px) {
+        .burgeritems {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .burgeritems > * {
+            flex-grow: 1;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            background-color: var(--White);
+            border: 1px solid var(--DarkBlue);
+        }
+        .burgeritems > *:hover{
+            background: var(--Beige);
+        }
+        .burgeritems > * {
+            width: 100%;
+        }
+
+    /* do not display the burger list when the toggle is not checked */
+        .burgeritems {display:none}
+        #burgertoggle:checked ~ .burgeritems { display: flex;}
+    }
+
+  /* ////burger button */
+  /* /////Navbar */
+
 /* Card About Me  */
 .cardaboutme {
     display: flex;
@@ -88,6 +158,15 @@ main {
     border-radius: 6px;
     margin: 30px;
 }
+ /* cardaboutme on small screen  */
+    @media screen and ( max-width: 768px) {
+
+        .cardaboutme {
+            flex-direction: column;
+            margin: 2px;
+            align-items: center;
+        }
+    }
 
 .cardtext {
     background-color: var(--White);
@@ -97,6 +176,12 @@ main {
     border: 1px solid var(--DarkBlue);
     width: 66%;
 }
+    @media screen and ( max-width: 768px) {
+        .cardtext {
+            width: 99%;
+            margin: 10px;
+        }
+    }
 
 .cardtext > h1 {
     color: var(--DarkBlue);
@@ -117,6 +202,13 @@ main {
     margin: 45px;
     width: 33%;
 }
+    @media screen and ( max-width: 768px) {
+        .cardlinkpicture {
+            margin: 20px;
+            width: 50%;
+        }
+    }
+
 .cardlinkpicture > img {
     border-radius: 100%;
     width: 100%;
@@ -140,6 +232,7 @@ main {
     justify-content: space-around;
     padding:10px;
 }
+/* //////Card About Me  */
 
 /* Card Project Container : */
 .projectcontainer {
@@ -148,12 +241,20 @@ main {
     flex-wrap: wrap;
     text-align: center;
 }
+/* align items on small screen */
+    @media screen and ( max-width: 768px) {
+        .projectcontainer {
+            align-items: center;
+        }
+
+    }
 .cardprojectcontainer {
     display: flex;
     align-items: top;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 
 .cardproject {
     background-color: var(--White);
@@ -163,8 +264,9 @@ main {
     text-align: center;
     border-radius: 10px;
     border: 1px solid var(--DarkBlue);
-    margin: 20px;
+    margin: 10px;
 }
+
 .cardproject > img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -180,10 +282,9 @@ main {
     color: var(--Blue);
     margin: 10px;
 }
-.logo {
-    width: 40px;
-    height: 40px;
-}
+
+/* ////Card Project Container : */
+
 /* Footer */
 footer {
     font-style: italic ;
@@ -191,82 +292,20 @@ footer {
     justify-content: end;
     margin-right: 10px;
 }
+/* //////Footer  */
 
 
-/* media query */
-@media screen and ( max-width: 768px) {
-/* Navbar */
-    .navbuttoncontainer {
-        margin-right: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-    }
-    .hitems {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .hitems > * {
-        flex-grow: 1;
-        flex-basis: 0;
-        padding: 10px;
-        color: white;
-        text-decoration: none;
-        text-align: center;
-        cursor: pointer;
-    }
-    .hitems > *:hover{
-        background: red;
-    }
-    .hitems > * {
-        width: 100%;
-        flex-basis: auto;
-        
-    }
-    .navbutton {
-        display: none;
-    }
-    .hbutton{
-        display: inline-block;
-        color: white;
-        font-size: 3.2em;
-        padding: 8px;
-        align-items: center;
-        justify-content: end;
-        }
-        /* show only when checkbox is :checked */
-        .hitems {display:none}
-        #htoggle:checked ~ .hitems { display: flex;}
-    /* Container Aboutme : */
-    .cardaboutme {
-        flex-direction: column;
-        margin: 2px;
-        align-items: center;
-    }
-    
-    .cardtext {
-        width: 99%;
-        margin: 10px;
-    }
-    
-    .cardlinkpicture {
-        margin: 20px;
-        width: 50%;
-    }
-    /* container projects : */
-        .projectcontainer {
-        align-items: center;
-    }
-    .cardprojectcontainer {
-        align-items: center;
-        width: 75%;
-    }
-
-    .cardproject {
-        margin: 10px;
-    }
-}
 /* css project1.html  */
+
+        /* ////Projectcontainershow on small screen : */
+        @media screen and ( max-width: 768px) {
+            .cardproject1 {
+                align-items: center;
+            }
+        }
+
+
+        
 .cardproject1 {
     background-color: var(--White);
     display: flex;
@@ -277,6 +316,7 @@ footer {
     border: 1px solid var(--DarkBlue);
     margin: 60px;
 }
+
 
 .cardproject1 > img {
     border-top-left-radius: 10px;
@@ -290,3 +330,37 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
+
+.cardproject1 > .cardprojecttitle {
+    display: none;
+}
+/* /////css project1.html  */
+
+
+.containershow {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+.cardcontainershow {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.imgshow {
+    width: 30%;
+}
+/* PROJECT 1 REBOOT
+SHOW  */
+
+/* containershow
+cardcontainershow
+cardshow
+
+carddescriptionshow
+cardsideimg
+sidepictureshow */
+
