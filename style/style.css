@@ -294,9 +294,7 @@ footer {
 }
 /* //////Footer  */
 
-
-/* css project1.html  */
-
+/* /////css project1.html  */
         /* ////Projectcontainershow on small screen : */
         @media screen and ( max-width: 768px) {
             .cardproject1 {
@@ -313,7 +311,6 @@ footer {
     flex-direction: column;
     text-align: center;
     border-radius: 10px;
-    border: 1px solid var(--DarkBlue);
     margin: 60px;
 }
 
@@ -334,33 +331,54 @@ footer {
 .cardproject1 > .cardprojecttitle {
     display: none;
 }
-/* /////css project1.html  */
 
+/* /////css project1.html  */
 
 .containershow {
     display: flex;
     flex-direction: column;    
     align-items: center;
+    margin: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .cardcontainershow {
+    margin-top: 10px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid var(--DarkBlue);
+    border-radius: 10px;
+}
+
+.carddescriptionshow {
+    padding: 30px; 
 }
 
 .imgshow {
-    width: 30%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-/* PROJECT 1 REBOOT
-SHOW  */
+.cardsideimg {
+    display: flex;
+    margin-top: 15px;
+    
+}
+.sidepictureshow > img {
+    width: 95%;
 
-/* containershow
-cardcontainershow
-cardshow
+    border: 1px solid var(--DarkBlue);
+    border-radius: 10px;
+}
+        /* ////Project show on small screen : */
 
-carddescriptionshow
-cardsideimg
-sidepictureshow */
-
+@media screen and ( max-width: 768px) {
+    .cardsideimg {
+        display: flex;
+        flex-direction: column;
+    }
+}
